@@ -1,0 +1,122 @@
+.box1 {
+  width: 40px;
+  height: 165px;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  transform-origin: 0 center;
+  border-radius: 10% 10% 0 0;
+  margin-left: 28px;
+  margin-top: 45px;
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,210,48,0.54);
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 230px;
+  bottom: 0;
+  border-radius: 10%;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 8%;
+  z-index: 1;
+  background-color: darkgreen;
+  &:hover {
+    .box1 {
+      background-color: red;
+      animation: small 1.6s  infinite;
+    }
+    .a {
+      width: 28px;
+      height: 28px;
+      border-top: 4px solid rgba(180,14,34,0.67);
+      border-right: 4px solid rgba(180,14,34,0.67);
+      transform: rotate(130deg);
+      margin-left: 5px;
+      margin-top: 200px;
+      animation: bang 2s infinite;
+    }
+  }
+}
+.a {
+  z-index: 99;
+}
+.box2：hover {
+  .text {
+    animation: text 1s infinite;
+  }
+}
+@keyframes {
+  text {
+    0% {
+      font-size: 20px;
+    }
+
+    bang {
+      0% {
+        transform: translate(0, -90px) rotate(130deg);
+      }
+
+      move {
+        0% {
+          transform: rotate(0deg);
+        }
+      }
+
+      50% {
+        font-size: 30px;
+        transform: translate(0, 90px) rotate(130deg);
+        transform: translate(0, -19px);
+        transform: rotate(180deg);
+      }
+
+      100% {
+        font-size: 20px;
+        transform: translate(0, 100px) rotate(130deg);
+        border-color: white;
+        transform: translate(0, 0);
+        transform: rotate(360deg);
+      }
+    }
+
+    .text {
+      transform: rotate(180deg);
+    }
+
+    @keyframes small {
+      0% {
+        transform: translate(0, 0);
+      }
+
+    .div1 {
+      animation: move 5s infinite;
+      transform-origin: center center;
+      width: 100px;
+      margin: auto;
+      display: -webkit-flex;
+      position: absolute;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+     25 % {
+       transform:translate(0, 0) rotate(130 deg);
+        transform:rotate(90 deg);
+        }
+    75 % {
+      border-color:white;
+      transform:rotate(270 deg);
+        }
+  }
+
